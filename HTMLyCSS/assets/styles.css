@@ -1,0 +1,384 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5em;
+}
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.7em;
+}
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+}
+
+/* Estructura General */
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Estilos de Encabezado */
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(154, 0, 232);
+    
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    background-color: rgb(154, 0, 232);
+    border-radius: 5px;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../Images/imagendev.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Secciones */
+
+/* Presentación */
+
+/* Sección de Intereses */
+
+
+#intereses {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#intereses .container{
+    padding: 150px 12px;
+}
+
+#intereses h2 {
+    margin-top: 0;
+    font-size: 4em;
+}
+
+#intereses h3 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+#intereses p{
+    display: none;
+    font-weight: bold;
+}
+
+#intereses .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 60px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+   
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../Images/series2.jpg);
+    
+    
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../Images/viaje1.jpeg);
+
+}
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../Images/videojuego1.jpg);
+
+ 
+}
+
+/* Portafolio */
+#portafolio {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#portafolio .carta1{
+    background-position: center center;
+    background-size: cover;
+    padding: 60px;
+    margin: 15px;
+    border-radius: 20px;
+
+}
+
+#portafolio .container{
+    padding: 150px 12px;
+}
+
+#portafolio h2 {
+    margin-top: 0;
+    font-size: 4em;
+}
+
+#portafolio p {
+    display: none;
+    font-weight: bold
+}
+
+.carta1:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../Images/fondo-trabajo.jpg);
+
+}
+.carta1:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../Images/fondo-trabajo.jpg);
+}
+.carta1:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../Images/fondo-trabajo.jpg);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(30, 30, 30);
+    
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: whitesmoke;
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#hero button {
+    font-size: 1.em;
+}
+
+.boton-inicio:hover {
+    background-color: #727272;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(151, 137, 243);
+}
+
+button:hover {
+    background-color: rgb(86, 72, 175);
+}
+
+.sobre-mi {
+    display: flex; /* Para alinear imagen y texto en fila */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    max-width: 800px; /* Limita el ancho del contenido */
+    margin: 0 auto; /* Centra el contenido */
+    background: white;
+    padding: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+
+.sobre-mi img {
+    width: 150px; /* Tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    
+}
+
+.sobre-mi .texto {
+    max-width: 500px;
+    margin: 20px; /* Elimina el margen por defecto */
+    padding: 0 auto; /* Elimina el padding por defecto */
+    text-align: justify; /* Justifica el texto *
+    font-size: 1.2em; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+.texto {
+    max-width: 500px;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.redes-sociales a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+    
+.redes-sociales a:hover {
+    color: rgb(151, 137, 243);
+}
+
+@media (min-width:720px) {
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    #hero h1{
+        font-size: 4em;
+    }
+    #intereses .mis-intereses{
+        display: flex;
+        justify-content: center;
+    }
+
+    #intereses p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #intereses h3{
+        margin-top: 0;
+    }
+
+    #intereses .carta {
+        padding: 30px;
+        box-shadow: 2px 2px 10px rgba(110, 110, 110, 0.5);
+
+    }
+
+    #portafolio .mi-portafolio{
+        display: flex;
+        justify-content: center;
+    }
+
+    #portafolio p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #portafolio h3{
+        margin-top: 0;
+    }
+
+    #portafolio .carta1 {
+        padding: 50px;
+        background-repeat: no-repeat;
+        box-shadow: 2px 2px 10px rgba(110, 110, 110, 0.5);
+        background-position-y: 0;
+    }
+}
